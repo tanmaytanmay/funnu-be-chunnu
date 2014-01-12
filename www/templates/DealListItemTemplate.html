@@ -1,0 +1,20 @@
+<a>
+	<div style="position: relative; padding: 0;">
+		<div class="logo">
+			<img class="dealImage" src='<%= smallImageUrls[0].replace(".s.", ".l.") %>'/>
+		</div>
+		<div class="data">
+			<div style="padding: 60px;">
+				<h4><%= dealName %></h4>
+				<div data-use="rating"></div>
+				<span style="position: absolute; right: 10px; bottom: 10px;">
+				<% if (totalTimeInSeconds) { %>
+				  <%= totalTimeInSeconds / 60 %>'
+				<% } %>					
+				</span>
+			</div>			
+		</div>				
+	</div>	
+	
+</a>	
+
